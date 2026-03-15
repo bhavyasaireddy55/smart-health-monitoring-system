@@ -1,78 +1,57 @@
-🧠 AI Smart Health Monitoring System
+🏥 Smart Health Monitoring System using Deep Ensemble Learning
 
-📌 Overview
-This project is an AI-powered health monitoring platform that analyzes wearable sensor data to detect human activities and generate health insights.
-The system uses ensemble machine learning and deep learning models to improve activity recognition accuracy.
+A Big Data–based Smart Health Monitoring System that predicts human physical activities and health states using wearable sensor data and Deep Ensemble Learning (DEL).
+The system combines multiple deep learning models including CNN, LSTM, DNN, DBN, and ELM to improve prediction accuracy.
 
-🚀 Features
+This project is inspired by the research paper “Big Data-Based Smart Health Monitoring System Using Deep Ensemble Learning.”
+🔄 System Workflow
 
-✔ Real-time health monitoring dashboard
-✔ Human activity recognition using wearable sensor data
-✔ Ensemble AI models (RandomForest + LSTM + CNN)
-✔ FastAPI backend for AI inference
-✔ Interactive Streamlit dashboard
-✔ Health analytics using Plotly visualizations
+1️⃣ Data Collection
+Sensor data collected from wearable devices.
+2️⃣ Data Preprocessing
+Cleaning missing values
+Normalization
+Window segmentation
+Feature extraction
 
-🏗 System Architecture
-Wearable Sensor Data
-        ↓
-Data Preprocessing
-        ↓
-Feature Engineering
-        ↓
-AI Models
-(RandomForest + LSTM + CNN)
-        ↓
-FastAPI Backend API
-        ↓
-Streamlit Dashboard
-        ↓
-Health Insights & Predictions
+3️⃣ Model Training
+CNN
+LSTM
+ELM
+4️⃣ Deep Ensemble Learning
+Combine predictions from all models.
+5️⃣ Health Monitoring Dashboard
+Displays predictions and live sensor readings.
 
+📈 Performance Metrics
 
-📂 Project Structure
-smart_health_monitoring
-│
-├── backend
-│   └── app.py
-│
-├── dataset
-│   └── processed_sensor_data.csv
-│
-├── feature_engineering
-│   └── feature_selection.py
-│
-├── model
-│   ├── train_model.py
-│   ├── train_lstm.py
-│   ├── train_cnn_model.py
-│   ├── activity_model.pkl
-│   ├── lstm_model.h5
-│   └── cnn_model.h5
-│
-├── frontend
-│   └── dashboard.py
-│
-├── notebooks
-│
-└── README.md
+The model performance is evaluated using:
+Accuracy
+Precision
+Sensitivity (Recall)
+Specificity
+F1-Score
+Matthews Correlation Coefficient (MCC)
+False Positive Rate (FPR)
+The deep ensemble model achieves higher prediction accuracy than individual models.
+📊 Example Output:
 
-🤖 Machine Learning Models
+The system predicts activities such as:
+Walking
+Sitting
+Standing
+Running
+Laying
+and visualizes the results in a health monitoring dashboard.
 
-The system uses ensemble learning combining three models:
-| Model        | Purpose                             |
-| ------------ | ----------------------------------- |
-| RandomForest | Structured feature classification   |
-| LSTM         | Time-series sensor pattern learning |
-| CNN          | Motion pattern detection            |
-Final prediction is generated using majority voting.
+🚀 Future Improvements
+Real-time IoT sensor integration
+Mobile health monitoring application
+Disease prediction models
 
-📈 Dashboard Features
-• Real-time health monitoring
-• Heart rate analytics
-• Oxygen level monitoring
-• AI activity prediction
-• Health insights and alerts
+Cloud deployment (AWS / Azure)
 
-📚 Dataset
-This project uses the UCI Human Activity Recognition (HAR) dataset, which contains accelerometer and gyroscope sensor data collected from wearable devices.
+📚 Reference
+
+Mustufa Haider Abidi et al.,
+“Big Data-Based Smart Health Monitoring System Using Deep Ensemble Learning,” IEEE Access, 2023.
