@@ -8,7 +8,7 @@ This project is inspired by the research paper “Big Data-Based Smart Health Mo
 
 1️⃣ Data Collection
 Sensor data collected from wearable devices.
-2️⃣ Data Preprocessing
+2️⃣ Data Preprocessing:
 Cleaning missing values
 Normalization
 Window segmentation
